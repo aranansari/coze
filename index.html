@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Co-Buying Site</title>
+    <link rel="icon" href="Coze Logo BG.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,14 +22,18 @@
         <form name="signup" id="signup-form" netlify>
             <div class="signup-section">
                 <div class="signup-left">
+                    <div class="form-item">
                         <label for="email">Email</label>
-                        <label for="state">State</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="state">State</label>    
+                        <input type="text" id="state" name="state" required>    
+                    </div>
+                    <div class="form-item">
                         <label for="budget">Budget</label>
-                </div>
-                <div class="signup-middle">
-                    <input type="email" id="email" name="email" required>
-                    <input type="text" id="state" name="state" required>
-                    <input type="number" id="budget" name="budget" required>
+                        <input type="number" id="budget" name="budget" required>
+                    </div>
                 </div>
                 <div class="signup-right">
                     <p  style="font-size: 20px !important; font-weight: 300 !important; text-align: center;">Join <b>249</b> others looking to co-buy their next home.</p>
@@ -62,7 +67,7 @@
         </div>
         <div class="row">
             <div class="rowText">
-                <h3>Never put your relationship at risk. Protect against broken trust or contracts.</h3>
+                <h3>Never put your relationships at risk. Protect against broken trust and contracts.</h3>
                 <p>Pre-set safeguards and contingency plans will protect you and your co-buyers against any unforeseen events.</p>
             </div>
             <img src="self_improvement.png">
