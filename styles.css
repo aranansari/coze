@@ -236,5 +236,6 @@ button {
     .row img {
         max-width: 80px;
         height: 80px;
+        display: none;
     }
 }
