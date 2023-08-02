@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DBDBF2;
+    padding: .5em 10em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: none;
+  }
+  
+  .sticky-nav.scrolled {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rounded-button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    background-color: #21213A;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+  }
+  
+.arrow{
+    width:15px;
+}
+
+  .lb{
+    background-color: #DBDBF2 !important;
+    color:#21213A !important;
+  }
+
+  .light-bg {
+    background-color: #DBDBF2;
+    color: black;
+  }
+  
+  .dark-bg {
+    background-color: #21213A;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 70px;
+    margin:0;
+  }
+  
+  h2 {
+    font-size: 45px;
+    margin:0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin:0;
+  }
+  
+  h4 {
+    font-size: 20px;
+    margin:0;
+    font-weight: 300;
+    padding:1em 12em;
+  }
+  
+  p{
+    font-weight: 300;
+  }
+
+  #section1{
+      display: flex;
+      text-align: center;
+      padding:3em 10em;
+  }
+
+
+  #section2{
+    padding:3em 5em;
+  }
+
+.bullet{
+    width:15px;
+}
+
+#bullets{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+  .padding {
+    padding: 10%;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .full-width {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-text {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+  }
+  
+  #section2 .image{
+      width:40%;
+  }
+
+  #section4{
+      padding:3em 15%;
+  }
+
+  #section4 .image{
+      width:40%;
+  }
+
+  .tiles{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:30px;
+  }
+
+  .faq-question{
+      display: flex;
+    justify-content: space-between;
+  }
+
+  .faq{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      padding:3em;
+  }
+
+  .scrolling-section {
+    height: 30px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .scrolling-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scrolling 20s linear infinite;
+  }
+  
+  .scroll-item {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .scrolling-content img {
+    height: 30px;
+  }
+  
+  @keyframes scrolling {
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(-100%);}
+    100% {transform: translateX(-200%);}
+  }
+  
+
+  .marquee-container {
+      display: flex;
+      align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    white-space: nowrap;
+    padding:.5em 0;
+  }
+  
+  .marquee {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    animation: marquee-scroll 10s linear infinite;
+
+  }
+  
+  .content {
+      display: flex;
+      align-items: center;
+      gap:20px;
+    padding: 0px; /* You can adjust this value for spacing */
+  }
+  .content img{
+      width:20px;
+  }
+  
+  @keyframes marquee-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width:80%;
+  }
+
+  hr { 
+    display: block;
+    width:100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+border-color:#DBDBF2;
+} 
+
+footer{
+    padding:2em 0;
+}
