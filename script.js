@@ -41,3 +41,24 @@ document.addEventListener("DOMContentLoaded", function() {
     marquee.style.animation = `marquee-scroll ${duration} linear infinite`;
   });
   
+
+  function slideUpOnScroll() {
+    const slideUpElements = document.querySelectorAll('.slide-up');
+    const windowHeight = window.innerHeight;
+    const scrolledToBottom = window.scrollY + windowHeight >= document.documentElement.scrollHeight;
+  
+    slideUpElements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+  
+      if (elementTop <= windowHeight - 200 || scrolledToBottom) { // 200px buffer
+        element.classList.add('active');
+      }
+    });
+  }
+  
+  // Add the scroll event listener
+  window.addEventListener('scroll', slideUpOnScroll);
+  
+  // Trigger the function on page load to catch any visible elements
+  slideUpOnScroll();
+  

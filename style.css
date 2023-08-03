@@ -138,6 +138,7 @@ body {
       padding:3em 15%;
   }
 
+
   #section4 .image{
       width:40%;
   }
@@ -212,6 +213,7 @@ body {
       align-items: center;
       gap:20px;
     padding: 0px; /* You can adjust this value for spacing */
+    padding-right:20px;
   }
   .content img{
       width:20px;
@@ -244,4 +246,17 @@ border-color:#DBDBF2;
 
 footer{
     padding:2em 0;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+  visibility: hidden;
+}
+
+.slide-up.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
