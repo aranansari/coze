@@ -152,13 +152,15 @@ body {
     .faq-question {
       display: flex;
       justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
       cursor: pointer;
     }
     
     .faq {
       display: flex;
       flex-direction: column;
-      gap: 20px;
       padding: 3em;
       width: 60%;
     }
