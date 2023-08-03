@@ -149,18 +149,33 @@ body {
       align-items: center;
       gap:30px;
   }
-
-  .faq-question{
+    .faq-question {
       display: flex;
-    justify-content: space-between;
-  }
-
-  .faq{
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    
+    .faq {
       display: flex;
       flex-direction: column;
-      gap:20px;
-      padding:3em;
-  }
+      gap: 20px;
+      padding: 3em;
+      width: 60%;
+    }
+    .faq-answer {
+      max-height: 0; /* Hide the content by default */
+      overflow: hidden; /* Prevent scrollbars */
+      transition: max-height 1s ease-in-out; /* Add transition effect */
+    }
+    
+    .faq-answer.show {
+      max-height: 1000px; /* Adjust as needed to accommodate content height */
+    }
+    
+  
+
+
+  
 
   .scrolling-section {
     height: 30px;

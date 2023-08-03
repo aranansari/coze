@@ -1,10 +1,12 @@
 document.querySelectorAll('.faq-question').forEach(question => {
-    question.addEventListener('click', (e) => {
-      const answer = e.target.nextElementSibling;
-      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-    });
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+    answer.classList.toggle('show');
   });
-  
+});
+
+
+
 
 const navbar = document.querySelector('.sticky-nav');
 window.addEventListener('scroll', () => {
