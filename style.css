@@ -277,3 +277,86 @@ footer{
   transform: translateY(0);
   visibility: visible;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  h1{
+    font-size:40px;
+  }
+
+
+  .sticky-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap:10px;
+  }
+
+  .sticky-nav span {
+    font-size: 24px !important;
+  }
+
+  .rounded-button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .marquee .content {
+    align-items: center;
+    gap: 10px;
+  }
+
+  #section1 {
+    padding:1em;
+    gap:4px;
+  }
+  h4{
+    padding:0;
+  }
+
+  #section2 .tiles, #section4 .tiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bullets {
+    text-align: center;
+  }
+
+  .faq h3, .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer p, .faq-answer, .footer-text p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sticky-nav span {
+    font-size: 20px;
+  }
+
+  .marquee .content img {
+    width: 30px;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+  
+  .faq-question, .faq-answer {
+    font-size: 14px;
+  }
+  
+  footer {
+    padding: 1em;
+  }
+}
