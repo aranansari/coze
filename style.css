@@ -40,9 +40,25 @@ body {
     gap:5px;
   }
   
-.no-underline{
-  text-decoration: none;
-}
+  .no-underline {
+    text-decoration: none;
+    position: relative; /* Makes sure that the pseudo-element is positioned relative to the parent */
+    display: inline-block; /* Ensures proper spacing for the pseudo-element */
+  }
+
+
+  .no-underline:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px; /* 5px away from the top */
+    left: -5px; /* 5px away from the left */
+    right: -5px; /* 5px away from the right */
+    bottom: -5px; /* 5px away from the bottom */
+    border: 2px solid #21213A; /* replace with the color you want */
+    border-radius: 30px;
+    pointer-events: none; /* ensures that the pseudo-element doesn't interfere with the clickability of the link */
+  }
 
 .arrow{
     width:15px;
@@ -51,6 +67,11 @@ body {
   .lb{
     background-color: #DBDBF2 !important;
     color:#21213A !important;
+  }
+
+    
+  .lb:hover::before {
+    border: 2px solid #DBDBF2 !important; /* replace with the color you want */
   }
 
   .light-bg {
